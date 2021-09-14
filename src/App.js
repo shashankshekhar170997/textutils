@@ -55,7 +55,7 @@ function App() {
   <Switch>
       <Route exact path="/">
       </Route>
-      <Route path="/about">
+      <Route exact path="/about">
         <About />
       </Route>
     </Switch>
