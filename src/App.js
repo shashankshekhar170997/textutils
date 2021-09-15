@@ -10,7 +10,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useParams
+  Link
 } from "react-router-dom";
  
 function App() {
@@ -53,15 +53,16 @@ function App() {
     <Alert alert={alert}/>
   <div className="container" my-3>
   <Switch>
-      <Route exact path="/">
-      </Route>
       <Route exact path="/about">
-        <About />
+      <About/> 
+      </Route>
+      <Route exact path="/">
+    <Textform  showalert ={showalert}heading = "Enter the text to analyze below" mode={mode}/>
       </Route>
     </Switch>
     </div>
     </Router>
-  { <Textform  showalert ={showalert}heading = "Enter the text to analyze below"/> }
+  {/* { <Textform  showalert ={showalert}heading = "Enter the text to analyze below"/> } */}
   {/* <About/> */}
     
   
